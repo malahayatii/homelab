@@ -8,11 +8,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - tales.moff.ch
+    - tales.kubelize.com
     secretName: rei-nginx-tls
   ingressClassName: nginx
   rules:
-  - host: tales.moff.ch
+  - host: tales.kubelize.com
     http:
       paths:
       - path: /
