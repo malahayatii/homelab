@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: minecraft
   source:
-    repoURL: https://kubelize.github.io/helm-charts/
+    repoURL: https://kubelize.github.io/game-servers/
     targetRevision: 0.1.1
     chart: minecraft-server
     helm:
