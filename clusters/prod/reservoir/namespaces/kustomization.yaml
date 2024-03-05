@@ -16,4 +16,4 @@ resources:
   # projects incubator
   # - ../../../../apps/common/namespaces/projects/incubator/webservers/nginx-testpage/
   - ../../../../apps/common/namespaces/projects/incubator/webservers/rei-nginx/
-  - ../../../../apps/common/namespaces/projects/incubator/tools/arm-ripper/
+  # - ../../../../apps/common/namespaces/projects/incubator/tools/arm-ripper/
