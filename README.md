@@ -1,4 +1,4 @@
-# reservoir
+# homelab
 
 This repository is used to sync operators and projects onto my home-lab k8s clusters
 
