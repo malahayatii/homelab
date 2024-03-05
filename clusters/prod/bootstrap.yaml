@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/moffoso/homelab
+    - repoURL: https://github.com/kubelize/homelab
       path: clusters/prod/reservoir
       targetRevision: HEAD
   destination:
