@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: rei-nginx-sync
+  namespace: rei-nginx
+spec:
+  schedule: "*/1 * * * *"  # Cron expression for running every 5 minutes
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: rei-nginx
+        spec:
+          containers:
+          - name: rei-nginx-sync
+            image: moffoso/sync-rei-nginx:0.0.7
+            volumeMounts:
+            - name: rei-nginx-data
+              mountPath: /tmp/new
+          volumes:
+          - name: rei-nginx-data
+            hostPath:
+              path: /media/kubevirt-hpp/pvc-3008d199-543b-43f2-bfcf-99777e477c85
+          restartPolicy: OnFailure

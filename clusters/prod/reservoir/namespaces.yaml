@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespaces
+  namespace: argocd
+spec:
+  project: default
+  sources:
+    - repoURL: https://github.com/moffoso/reservoir
+      path: clusters/prod/reservoir/namespaces
+      targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd

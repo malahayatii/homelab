@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  # projects stable
+  # projects incubator
+  - ../../../../apps/projects/incubator/gameservers/palworld/
+  # - ../../../../apps/projects/incubator/webservers/nginx-testpage/
+  # - ../../../../apps/projects/incubator/gameservers/minecraft/
+  # - ../../../../apps/projects/incubator/fileshare/nextcloud/
