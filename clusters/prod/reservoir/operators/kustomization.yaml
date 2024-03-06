@@ -8,7 +8,8 @@ resources:
   - ../../../../apps/operators/stable/observability/kubernetes-dashboard/
   - ../../../../apps/operators/stable/security/tetragon/
   - ../../../../apps/operators/stable/storage/kubevirt-hpp/
+  - ../../../../apps/operators/stable/observability/renovate/
   # operators incubator
   # - ../../../../apps/operators/incubator/storage/kubevirt-hpp/
   # - ../../../../apps/operators/incubator/observability/uptime-kuma/
-  - ../../../../apps/operators/incubator/observability/renovate/
+  - ../../../../apps/operators/stable/observability/renovate/
