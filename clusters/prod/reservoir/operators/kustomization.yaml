@@ -12,4 +12,3 @@ resources:
   # operators incubator
   # - ../../../../apps/operators/incubator/storage/kubevirt-hpp/
   # - ../../../../apps/operators/incubator/observability/uptime-kuma/
-  - ../../../../apps/operators/stable/observability/renovate/
