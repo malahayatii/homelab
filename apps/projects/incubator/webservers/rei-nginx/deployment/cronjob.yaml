@@ -21,5 +21,5 @@ spec:
           volumes:
           - name: rei-nginx-data
             hostPath:
-              path: /media/kubevirt-hpp/pvc-fae572db-16d3-4552-ba31-206f6c427200
+              path: /media/kubevirt-hpp/pvc-6e04ad4c-7b48-4fba-b407-99d900f26662
           restartPolicy: OnFailure
