@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: testpage-claim
-  namespace: testpage
+  name: nginx-testpage-claim
+  namespace: nginx-testpage
   annotations: 
     kubevirt.io/provisionOnNode: prod-svc-270224
 spec:

@@ -15,6 +15,6 @@ resources:
   - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
   - ../../../../apps/common/namespaces/projects/stable/gameservers/palworld/
   # projects incubator
-  # - ../../../../apps/common/namespaces/projects/incubator/webservers/nginx-testpage/
+  - ../../../../apps/common/namespaces/projects/incubator/webservers/nginx-testpage/
   - ../../../../apps/common/namespaces/projects/incubator/webservers/rei-nginx/
   # - ../../../../apps/common/namespaces/projects/incubator/tools/arm-ripper/

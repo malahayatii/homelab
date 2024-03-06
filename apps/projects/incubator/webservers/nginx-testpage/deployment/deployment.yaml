@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: testpage 
-  name: testpage
+  namespace: nginx-testpage
+  name: nginx-testpage
   labels:
-    app: testpage
+    app: nginx-testpage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: testpage
+      app: nginx-testpage
   template:
     metadata:
       labels:
-        app: testpage
+        app: nginx-testpage
     spec:
       containers:
        - name: nginx-testpage
@@ -23,7 +23,7 @@ spec:
             name: http
          volumeMounts:
           - mountPath: usr/share/nginx/html
-            name: testpage-volume
+            name: nginx-testpage-volume
          resources:
            limits:
              cpu: 1000m
@@ -32,6 +32,6 @@ spec:
              cpu: 1000m
              memory: 1Gi 
       volumes:
-       - name: testpage-volume
+       - name: nginx-testpage-volume
          persistentVolumeClaim:
-           claimName: testpage-claim 
+           claimName: nginx-testpage-claim 

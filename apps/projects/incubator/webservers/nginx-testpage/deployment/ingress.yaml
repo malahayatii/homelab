@@ -4,21 +4,21 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-staging-nginx
   name: testpage-ing
-  namespace: testpage
+  namespace: nginx-testpage
 spec:
   tls:
   - hosts:
     - test.moff.ch
-    secretName: testpage-secret
+    secretName: nginx-testpage-secret
   ingressClassName: nginx
   rules:
-  - host: test.moff.ch
+  - host: test.kubelize.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: testpage-svc
+            name: nginx-testpage-svc
             port:
               number: 80
