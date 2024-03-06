@@ -4,7 +4,7 @@ metadata:
   name: rei-nginx-sync
   namespace: rei-nginx
 spec:
-  schedule: "*/1 * * * *"  # Cron expression for running every 5 minutes
+  schedule: "0 1 * * *"  # Cron expression for running every 5 minutes
   jobTemplate:
     spec:
       template:
