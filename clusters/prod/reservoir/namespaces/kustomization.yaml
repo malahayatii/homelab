@@ -9,8 +9,8 @@ resources:
   - ../../../../apps/common/namespaces/operators/stable/security/tetragon/
   - ../../../../apps/common/namespaces/operators/stable/storage/kubevirt-hpp/
   - ../../../../apps/common/namespaces/operators/stable/observability/kubernetes-dashboard/
+  - ../../../../apps/common/namespaces/operators/stable/observability/renovate/
   # operators incubator
-  - ../../../../apps/common/namespaces/operators/incubator/observability/renovate/
   # projects stable
   - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
   - ../../../../apps/common/namespaces/projects/stable/gameservers/palworld/
