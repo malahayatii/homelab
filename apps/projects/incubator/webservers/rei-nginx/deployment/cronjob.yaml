@@ -19,8 +19,8 @@ spec:
             - name: rei-nginx-data
               mountPath: /tmp/website
             - name: sync-script
-              mountPath: /usr/local/bin/sync.sh
-              subPath: sync.sh
+              mountPath: /usr/local/bin/rsync.sh
+              subPath: sync-cm
           volumes:
           - name: rei-nginx-data
             hostPath:
