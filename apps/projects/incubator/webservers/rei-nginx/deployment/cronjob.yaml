@@ -25,7 +25,7 @@ spec:
           - name: rei-nginx-data
             hostPath:
               path: /media/kubevirt-hpp/pvc-6e04ad4c-7b48-4fba-b407-99d900f26662
-          - name: sync-script
+          - name: sync-cm
             configMap:
               name: sync-script
           restartPolicy: OnFailure
