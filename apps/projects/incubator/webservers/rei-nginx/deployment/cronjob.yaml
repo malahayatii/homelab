@@ -15,7 +15,7 @@ spec:
           containers:
           - name: rei-nginx-sync
             image: kubelize/rsync:0.0.1
-            imagePullPolicy: Always
+            imagePullPolicy: IfNotPresent
             volumeMounts:
             - name: rei-nginx-data
               mountPath: /tmp/website
