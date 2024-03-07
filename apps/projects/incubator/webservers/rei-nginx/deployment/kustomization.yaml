@@ -6,3 +6,4 @@ resources:
   - ingress.yaml
   - storage.yaml
   - cronjob.yaml
+  - sync-cm.yaml

@@ -14,12 +14,18 @@ spec:
         spec:
           containers:
           - name: rei-nginx-sync
-            image: moffoso/sync-rei-nginx:0.0.7
+            image: kubelize/rsync:0.0.1
             volumeMounts:
             - name: rei-nginx-data
-              mountPath: /tmp/new
+              mountPath: /tmp/website
+            - name: sync-script
+              mountPath: /usr/local/bin/sync.sh
+              subPath: sync.sh
           volumes:
           - name: rei-nginx-data
             hostPath:
               path: /media/kubevirt-hpp/pvc-6e04ad4c-7b48-4fba-b407-99d900f26662
+          - name: sync-script
+            configMap:
+              name: sync-script
           restartPolicy: OnFailure
