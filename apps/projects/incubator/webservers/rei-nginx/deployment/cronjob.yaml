@@ -21,6 +21,7 @@ spec:
             - name: sync-cm
               mountPath: /usr/local/bin/rsync.sh
               subPath: rsync.sh
+            command: ["/bin/bash", "/usr/local/bin/rsync.sh"]  # Specify the command to run the script
           volumes:
           - name: rei-nginx-data
             hostPath:
