@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: kubelize-nextra
+  name: kubelize-nextra
+  labels:
+    app: kubelize-nextra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubelize-nextra
+  template:
+    metadata:
+      labels:
+        app: kubelize-nextra
+    spec:
+      containers:
+       - name: kubelize-nextra
+         image: kubelize/nextra:0.0.1
+         ports:
+          - containerPort: 3000
+            name: http
+         volumeMounts:
+          - mountPath: /home/nextra/git
+            name: nextra-data
+          - mountPath: /usr/local/bin/run_server.sh
+            subPath: run_server.sh
+            name: run-cm
+         command: ["/bin/bash", "/usr/local/bin/run_server.sh"]
+         resources:
+           limits:
+             cpu: 1000m
+             memory: 1Gi
+           requests:
+             cpu: 1000m
+             memory: 1Gi 
+      volumes:
+       - name: nextra-data
+         persistentVolumeClaim:
+           claimName: kubelize-nextra
+       - name: run-cm
+         configMap:
+          name: run-server

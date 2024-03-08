@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/kubelize/homelab
+    - repoURL: https://github.com/execved/homelab
       path: apps/projects/incubator/webservers/nginx-testpage/deployment
       targetRevision: HEAD
   destination:

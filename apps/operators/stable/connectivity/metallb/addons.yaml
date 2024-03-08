@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/kubelize/homelab
+    - repoURL: https://github.com/execved/homelab
       path: apps/addons/metallb-config
       targetRevision: HEAD
   destination:
