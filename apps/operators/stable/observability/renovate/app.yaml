@@ -63,7 +63,7 @@ spec:
             {
               "dryRun": false,
               "printConfig": true,
-              "repositories": ["execve/homelab"]
+              "repositories": ["execved/homelab"]
             }
 
           # -- Use the Helm tpl function on your configuration. See README for how to use this value
