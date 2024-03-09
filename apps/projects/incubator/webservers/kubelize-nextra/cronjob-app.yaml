@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: rei-nginx
+  name: kubelize-nextra-rsync
   namespace: argocd
 spec:
   project: default
   sources:
     - repoURL: https://github.com/malahayatii/homelab
-      path: apps/projects/incubator/webservers/rei-nginx/deployment
+      path: apps/projects/incubator/webservers/kubelize-nextra/deployment
       targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: rei-nginx
+    namespace: kubelize-nextra
