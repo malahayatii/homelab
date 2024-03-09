@@ -45,7 +45,7 @@ spec:
             #!/bin/bash
             GIT_URL="https://github.com/kubelize/kubelize.com.git"
             DST_PATH="/home/nextra/git/kubelize.com"
-            git clone $GIT_URL $DST_PATH
+            git pull $GIT_URL $DST_PATH
             echo "syncing $DST_PATH to destination"
             npm i --prefix $DST_PATH next react react-dom nextra nextra-theme-docs
             CI=true npx pnpm --prefix $DST_PATH install
