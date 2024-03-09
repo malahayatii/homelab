@@ -130,17 +130,12 @@ spec:
 
         # Additional volumes on the output Deployment definition.
         volumes:
-          - name: nextra-data
-            persistentVolumeClaim:
-              claimName: kubelize-nextra
           - name: run-cm
             configMap:
               name: run-server
 
         # Additional volumeMounts on the output Deployment definition.
         volumeMounts:
-          - mountPath: /home/nextra/git
-            name: nextra-data
           - mountPath: /usr/local/bin/run_server.sh
             subPath: run_server.sh
             name: run-cm
