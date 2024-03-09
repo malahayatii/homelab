@@ -10,7 +10,7 @@ spec:
     namespace: kubelize-nextra
   source:
     repoURL: https://kubelize.github.io/helm-charts/
-    targetRevision: 0.1.0
+    targetRevision: 0.1.1
     chart: nextra
     helm:
       parameters: []
@@ -32,6 +32,7 @@ spec:
         fullnameOverride: ""
 
         storage:
+          enabled: false
           name: kubelize-nextra
           accessMode: "ReadWriteOnce"
           storageClassName: "kubevirt-hostpath-provisioner"
