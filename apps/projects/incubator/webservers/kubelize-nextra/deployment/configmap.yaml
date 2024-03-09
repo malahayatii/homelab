@@ -12,4 +12,6 @@ data:
     echo "syncing $DST_PATH to destination"
     npm i --prefix $DST_PATH next react react-dom nextra nextra-theme-docs
     CI=true npx pnpm --prefix $DST_PATH install
-    npm --prefix $DST_PATH run dev
+    # npm --prefix $DST_PATH run dev
+    npm --prefix $DST_PATH run build
+    npm --prefix $DST_PATH run start

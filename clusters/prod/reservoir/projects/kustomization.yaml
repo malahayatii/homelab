@@ -10,3 +10,4 @@ resources:
   - ../../../../apps/projects/incubator/webservers/nginx-testpage/
   # - ../../../../apps/projects/incubator/gameservers/minecraft/
   # - ../../../../apps/projects/incubator/fileshare/nextcloud/
+  - ../../../../apps/projects/incubator/webservers/kubelize-nextra
