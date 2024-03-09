@@ -26,7 +26,7 @@ spec:
           volumes:
           - name: nextra-data
             hostPath:
-              path: /media/kubevirt-hpp/pvc-6e04ad4c-7b48-4fba-b407-99d900f26662/kubelize.com
+              path: /media/kubevirt-hpp/pvc-13fa8107-6511-49ed-a0e9-d284e3938863/kubelize.com
           - name: sync-cm
             configMap:
               name: sync-script
