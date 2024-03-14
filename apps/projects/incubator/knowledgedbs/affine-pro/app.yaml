@@ -291,7 +291,7 @@ spec:
             - host: notion.kubelize.com
               paths:
                 - path: /workspace
-                  pathType: ImplementationSpecific
+                  pathType: Prefix
           tls:
             - secretName: affine-pro-tls
               hosts:
