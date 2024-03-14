@@ -10,7 +10,7 @@ spec:
     namespace: affine-pro
   source:
     repoURL: https://kubelize.github.io/helm-charts/
-    targetRevision: 0.1.0
+    targetRevision: 0.1.1
     chart: affine-pro
     helm:
       parameters: []
