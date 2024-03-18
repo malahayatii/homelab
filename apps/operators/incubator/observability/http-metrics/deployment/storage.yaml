@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    kubevirt.io/provisionOnNode: prod-svc-270224
+  labels:
+    app: http-metrics
+  name: http-metrics-claim
+  namespace: observability-system
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: kubevirt-hostpath-provisioner
+  volumeMode: Filesystem
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 5Gi
