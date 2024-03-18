@@ -11,4 +11,4 @@ resources:
   # - ../../../../apps/projects/incubator/gameservers/minecraft/
   # - ../../../../apps/projects/incubator/fileshare/nextcloud/
   - ../../../../apps/projects/incubator/webservers/kubelize-nextra/
-  - ../../../../apps/projects/incubator/knowledgedbs/affine-pro/
+  # - ../../../../apps/projects/incubator/knowledgedbs/affine-pro/
