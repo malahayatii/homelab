@@ -74,7 +74,7 @@ spec:
             name: web-claim
             accessMode: "ReadWriteOnce"
             storageClassName: "kubevirt-hostpath-provisioner"
-            capacity: "5Gi"
+            capacity: "50Gi"
             annotations:
               kubevirt.io/provisionOnNode: "prod-svc-270224"
           # Additional volumes on the output Deployment definition.
@@ -160,7 +160,7 @@ spec:
             name: postgres-claim
             accessMode: "ReadWriteOnce"
             storageClassName: "kubevirt-hostpath-provisioner"
-            capacity: "5Gi"
+            capacity: "40Gi"
             annotations:
               kubevirt.io/provisionOnNode: "prod-svc-270224"
           # Additional volumes on the output Deployment definition.
@@ -246,7 +246,7 @@ spec:
             name: redis-claim
             accessMode: "ReadWriteOnce"
             storageClassName: "kubevirt-hostpath-provisioner"
-            capacity: "5Gi"
+            capacity: "10Gi"
             annotations:
               kubevirt.io/provisionOnNode: "prod-svc-270224"
           # Additional volumes on the output Deployment definition.
