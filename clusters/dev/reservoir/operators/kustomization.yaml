@@ -9,6 +9,7 @@ resources:
   # - ../../../../apps/operators/stable/security/tetragon/
   # - ../../../../apps/operators/stable/storage/kubevirt-hpp/
   - ../../../../apps/operators/stable/observability/renovate/
+  - ../../../../apps/operators/stable/storage/longhorn/
   # operators incubator
   # - ../../../../apps/operators/incubator/storage/kubevirt-hpp/
   - ../../../../apps/operators/incubator/observability/uptime-kuma/
