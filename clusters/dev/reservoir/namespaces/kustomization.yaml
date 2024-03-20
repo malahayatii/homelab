@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  # operators stable
+  - ../../../../apps/common/namespaces/operators/stable/cicd/argocd/
+  - ../../../../apps/common/namespaces/operators/stable/connectivity/cert-manager/
+  - ../../../../apps/common/namespaces/operators/stable/connectivity/ingress-nginx/
+  - ../../../../apps/common/namespaces/operators/stable/connectivity/metallb/
+  - ../../../../apps/common/namespaces/operators/stable/security/tetragon/
+  - ../../../../apps/common/namespaces/operators/stable/storage/kubevirt-hpp/
+  - ../../../../apps/common/namespaces/operators/stable/observability/kubernetes-dashboard/
+  - ../../../../apps/common/namespaces/operators/stable/observability/renovate/
+  # operators incubator
+  # projects stable
+  - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
+  - ../../../../apps/common/namespaces/projects/stable/gameservers/palworld/
+  # projects incubator
+  - ../../../../apps/common/namespaces/projects/incubator/webservers/nginx-testpage/
+  - ../../../../apps/common/namespaces/projects/incubator/webservers/rei-nginx/
+  - ../../../../apps/common/namespaces/projects/incubator/webservers/kubelize-nextra/
+  # - ../../../../apps/common/namespaces/projects/incubator/tools/arm-ripper/
