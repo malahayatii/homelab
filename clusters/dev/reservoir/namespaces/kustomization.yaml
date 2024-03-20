@@ -5,9 +5,10 @@ resources:
   - ../../../../apps/common/namespaces/operators/stable/cicd/argocd/
   - ../../../../apps/common/namespaces/operators/stable/connectivity/cert-manager/
   - ../../../../apps/common/namespaces/operators/stable/connectivity/ingress-nginx/
-  - ../../../../apps/common/namespaces/operators/stable/connectivity/metallb/
-  - ../../../../apps/common/namespaces/operators/stable/security/tetragon/
-  - ../../../../apps/common/namespaces/operators/stable/storage/kubevirt-hpp/
+  # - ../../../../apps/common/namespaces/operators/stable/connectivity/metallb/
+  # - ../../../../apps/common/namespaces/operators/stable/security/tetragon/
+  # - ../../../../apps/common/namespaces/operators/stable/storage/kubevirt-hpp/
+  - ../../../../apps/common/namespaces/operators/stable/storage/longhorn/
   - ../../../../apps/common/namespaces/operators/stable/observability/kubernetes-dashboard/
   - ../../../../apps/common/namespaces/operators/stable/observability/renovate/
   # operators incubator
