@@ -15,10 +15,9 @@ spec:
       labels:
         app: http-metrics
     spec:
-      nodeName: prod-svc-270224
       containers:
        - name: http-metrics
-         image: kubelize/http-metrics:0.0.1
+         image: kubelize/http-metrics:0.0.3
          imagePullPolicy: Always
          ports:
           - containerPort: 80
@@ -45,4 +44,4 @@ spec:
       volumes:
        - name: metrics
          persistentVolumeClaim:
-           claimName: http-metrics-claim
+           claimName: http-metrics

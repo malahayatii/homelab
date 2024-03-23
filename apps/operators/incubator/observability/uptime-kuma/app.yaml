@@ -79,10 +79,9 @@ spec:
         storage:
           name: "uptime-kuma"
           accessMode: ""
-          storageClassName: "kubevirt-hostpath-provisioner"
-          capacity: ""
-          annotations:
-            kubevirt.io/provisionOnNode: "prod-svc-270224"
+          storageClassName: "mayastor-3"
+          capacity: "10Gi"
+          annotations: {}
 
         resources: {}
           # We usually recommend not to specify default resources and to leave this as a conscious

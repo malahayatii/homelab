@@ -12,4 +12,4 @@ resources:
   # - ../../../../apps/operators/stable/storage/longhorn/
   # operators incubator
   # - ../../../../apps/operators/incubator/storage/kubevirt-hpp/
-  # - ../../../../apps/operators/incubator/observability/uptime-kuma/
+  - ../../../../apps/operators/incubator/observability/uptime-kuma/

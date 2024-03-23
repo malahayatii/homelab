@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: trigger-conf
+data:
+  trigger.conf: |
+    server {
+        listen 80;
+        server_name localhost;
+
+        set $trigger_status "Inactive";
+
+        # Default value for /status
+        location = /status {
+            return 200 $trigger_status;
+        }
+
+        location /trigger {
+            # Allow only POST requests
+            limit_except POST {
+                deny all;
+            }
+
+            # Set flag indicating active status
+            set $trigger_status "Active";
+
+            # Return a success response to Arduino
+            return 200 'Data received successfully';
+
+            # Add logging
+            access_log /var/log/nginx/trigger_access.log;
+            error_log /var/log/nginx/trigger_error.log;
+        }
+
+        location / {
+            # Serve the index.html page
+            root /usr/share/nginx/html;
+            index index.html;
+        }
+    }
