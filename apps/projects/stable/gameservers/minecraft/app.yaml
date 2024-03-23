@@ -36,10 +36,10 @@ spec:
         storage:
           name: "minecraft-server-data"
           accessMode: "ReadWriteOnce"
-          storageClassName: "kubevirt-hostpath-provisioner"
+          storageClassName: "mayastor-3"
           capacity: "20Gi"
-          annotations:
-            kubevirt.io/provisionOnNode: "prod-svc-270224"
+          annotations: {}
+            # kubevirt.io/provisionOnNode: "prod-svc-270224"
         podAnnotations: {}
         podSecurityContext: {}
           # fsGroup: 2000

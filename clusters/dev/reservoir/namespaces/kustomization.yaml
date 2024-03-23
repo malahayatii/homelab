@@ -13,7 +13,7 @@ resources:
   - ../../../../apps/common/namespaces/operators/stable/observability/renovate/
   # operators incubator
   # projects stable
-  # - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
+  - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
   # - ../../../../apps/common/namespaces/projects/stable/gameservers/palworld/
   # projects incubator
   # - ../../../../apps/common/namespaces/projects/incubator/webservers/nginx-testpage/
