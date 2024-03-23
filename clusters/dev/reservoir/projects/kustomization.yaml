@@ -3,11 +3,11 @@ kind: Kustomization
 resources:
   # projects stable
   # - ../../../../apps/projects/stable/gameservers/palworld/
-  - ../../../../apps/projects/stable/gameservers/minecraft/    
+  # - ../../../../apps/projects/stable/gameservers/minecraft/    
   # projects incubator
-  - ../../../../apps/projects/incubator/webservers/rei-nginx/
+  # - ../../../../apps/projects/incubator/webservers/rei-nginx/
   # - ../../../../apps/projects/incubator/tools/arm-ripper/
-  - ../../../../apps/projects/incubator/webservers/nginx-testpage/
+  # - ../../../../apps/projects/incubator/webservers/nginx-testpage/
   # - ../../../../apps/projects/incubator/gameservers/minecraft/
   # - ../../../../apps/projects/incubator/fileshare/nextcloud/
   - ../../../../apps/projects/incubator/webservers/kubelize-nextra/
