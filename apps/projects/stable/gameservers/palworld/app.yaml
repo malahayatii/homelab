@@ -87,7 +87,10 @@ spec:
           # targetMemoryUtilizationPercentage: 80
 
         # Additional volumes on the output Deployment definition.
-        volumes: []
+        volumes:
+          - name: data
+            persistentVolumeClaim:
+              claimName: palworld-data
         # - name: foo
         #   secret:
         #     secretName: mysecret
