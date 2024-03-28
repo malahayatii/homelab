@@ -63,10 +63,9 @@ spec:
         storage:
           name: "palworld-data"
           accessMode: ""
-          storageClassName: "kubevirt-hostpath-provisioner"
+          storageClassName: "mayastor-3"
           capacity: ""
-          annotations:
-            kubevirt.io/provisionOnNode: prod-svc-270224
+          annotations: {}
 
         resources:
           # We usually recommend not to specify default resources and to leave this as a conscious
