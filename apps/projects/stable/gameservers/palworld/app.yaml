@@ -64,7 +64,7 @@ spec:
           name: "palworld-data"
           accessMode: ""
           storageClassName: "mayastor-3"
-          capacity: "40"
+          capacity: "40Gi"
           annotations: {}
 
         resources:
