@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: palworld
   source:
-    repoURL: https://kubelize.github.io/helm-charts/
+    repoURL: https://kubelize.github.io/game-servers/
     targetRevision: 0.1.2
     chart: palserver
     helm:
