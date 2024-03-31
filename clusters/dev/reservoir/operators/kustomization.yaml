@@ -5,7 +5,7 @@ resources:
   - ../../../../apps/operators/stable/connectivity/cert-manager/
   - ../../../../apps/operators/stable/connectivity/metallb/
   - ../../../../apps/operators/stable/connectivity/ingress-nginx/
-  # - ../../../../apps/operators/stable/observability/kubernetes-dashboard/
+  - ../../../../apps/operators/stable/observability/kubernetes-dashboard/
   # - ../../../../apps/operators/stable/security/tetragon/
   # - ../../../../apps/operators/stable/storage/kubevirt-hpp/
   - ../../../../apps/operators/stable/observability/renovate/
