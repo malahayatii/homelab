@@ -4,7 +4,6 @@ resources:
   # projects stable
   - ../../../../apps/projects/stable/gameservers/palworld/
   - ../../../../apps/projects/stable/gameservers/minecraft/
-  - ../../../../apps/projects/stable/password-managers/bitwarden/   
   # projects incubator
   # - ../../../../apps/projects/incubator/webservers/rei-nginx/
   # - ../../../../apps/projects/incubator/tools/arm-ripper/
