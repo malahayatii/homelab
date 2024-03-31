@@ -10,7 +10,7 @@ spec:
     namespace: palworld
   source:
     repoURL: https://kubelize.github.io/game-servers/
-    targetRevision: 0.1.2
+    targetRevision: 0.1.3
     chart: palserver
     helm:
       parameters: []
@@ -22,10 +22,10 @@ spec:
         replicaCount: 1
 
         image:
-          repository: moffoso/palserver
+          repository: kubelize/palworld-server
           pullPolicy: IfNotPresent
           # Overrides the image tag whose default is the chart appVersion.
-          tag: "0.0.7"
+          tag: "0.0.1"
 
         imagePullSecrets: []
         nameOverride: ""
@@ -48,13 +48,15 @@ spec:
         podSecurityContext: {}
           # fsGroup: 2000
 
-        securityContext: {}
-          # capabilities:
-          #   drop:
-          #   - ALL
-          # readOnlyRootFilesystem: true
-          # runAsNonRoot: true
-          # runAsUser: 1000
+        securityContext:
+          capabilities:
+            drop:
+            - ALL
+          runAsNonRoot: true
+          runAsUser: 1000
+          allowPrivilegeEscalation: false
+          seccompProfile:
+            type: RuntimeDefault
 
         service:
           type: LoadBalancer
