@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   # projects stable
   - ../../../../apps/projects/stable/gameservers/palworld/
-  - ../../../../apps/projects/stable/gameservers/minecraft/
+  - ../../../../apps/projects/stable/gameservers/minecraft/ 
   # projects incubator
   # - ../../../../apps/projects/incubator/webservers/rei-nginx/
   # - ../../../../apps/projects/incubator/tools/arm-ripper/
@@ -11,3 +11,4 @@ resources:
   # - ../../../../apps/projects/incubator/fileshare/nextcloud/
   - ../../../../apps/projects/incubator/webservers/kubelize-nextra/
   # - ../../../../apps/projects/incubator/knowledgedbs/affine-pro/
+  - ../../../../apps/projects/incubator/password-managers/bitwarden/  
