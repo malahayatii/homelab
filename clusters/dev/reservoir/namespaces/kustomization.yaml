@@ -16,6 +16,7 @@ resources:
   # projects stable
   - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
   - ../../../../apps/common/namespaces/projects/stable/gameservers/palworld/
+  - ../../../../apps/common/namespaces/projects/stable/fileshare/nextcloud/
   # projects incubator
   # - ../../../../apps/common/namespaces/projects/incubator/webservers/nginx-testpage/
   # - ../../../../apps/common/namespaces/projects/incubator/webservers/rei-nginx/

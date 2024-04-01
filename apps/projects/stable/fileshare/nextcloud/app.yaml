@@ -66,7 +66,7 @@ spec:
           tls:
             - secretName: nextcloud-tls
               hosts:
-                - veil.moff.ch
+                - drive.kubelize.com
           labels: {}
           path: /
           pathType: Prefix
@@ -83,7 +83,7 @@ spec:
           protocol: https
 
         nextcloud:
-          host: veil.moff.ch
+          host: drive.kubelize.com
           username: admin
           password: initialaccess8227
           ## Use an existing secret
@@ -269,7 +269,7 @@ spec:
           ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
           ##   GKE, AWS & OpenStack)
           ##
-          storageClass: "kubevirt-hostpath-provisioner"
+          storageClass: "mayastor-3"
 
           ## A manually managed Persistent Volume and Claim
           ## Requires persistence.enabled: true
