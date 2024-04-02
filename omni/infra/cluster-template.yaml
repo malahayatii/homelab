@@ -1,9 +1,9 @@
 kind: Cluster
-name: omni-contrib
+name: homelab-dev
 talos:
-  version: v1.6.7
+  version: v1.6.1
 kubernetes:
-  version: 1.29.3
+  version: 1.28.6
 features:
   enableWorkloadProxy: true
 patches:
