@@ -1,5 +1,5 @@
 kind: Cluster
-name: omni-contrib
+name: homelab-dev
 talos:
   version: v1.6.7
 kubernetes:
@@ -15,8 +15,6 @@ machineClass:
   name: homelab-control-plane
   size: 3
 patches:
-  - name: cilium
-    file: patches/cilium.yaml
   - name: argocd
     file: patches/argocd.yaml
   - name: monitoring
