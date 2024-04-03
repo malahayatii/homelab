@@ -22290,11 +22290,11 @@ cluster:
             preserveResourcesOnDeletion: true
           template:
             metadata:
-              name: '{{ path[3] }}-{{ path.basenameNormalized }}'
+              name: '{{ path[2] }}-{{ path.basenameNormalized }}'
               namespace: argocd
             spec:
               destination:
-                namespace: '{{ path[3] }}'
+                namespace: '{{ path[2] }}'
                 server: https://kubernetes.default.svc
               ignoreDifferences:
               - jsonPointers:
