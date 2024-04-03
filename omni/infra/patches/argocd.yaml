@@ -22278,8 +22278,8 @@ cluster:
               generators:
               - list:
                   elements:
-                  - repoPath: omni/apps/*/*
-                    repoURL: https://github.com/malahayatii/homelab.git
+                  - repoPath: examples/omni/apps/*/*
+                    repoURL: https://github.com/siderolabs/contrib.git
                     revision: HEAD
               - git:
                   directories:
