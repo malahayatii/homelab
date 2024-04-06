@@ -24,4 +24,4 @@ spec:
       volumes:
       - name: pvc-volume
         persistentVolumeClaim:
-          claimName: conan-exiles-data
+          claimName: conan-exiles-data # Name of your existing PVC
