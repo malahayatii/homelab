@@ -11,8 +11,6 @@ patches:
     file: patches/cni.yaml
   - name: storage
     file: patches/storage.yaml
-  - name: disks
-    file: patches/disks.yaml
 
 ---
 kind: ControlPlane
@@ -32,3 +30,6 @@ name: workers
 machineClass:
   name: homelab-worker
   size: unlimited
+patches:
+  - name: disks
+    file: patches/disks.yaml

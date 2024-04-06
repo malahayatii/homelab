@@ -9,5 +9,6 @@ resources:
   # - ../../../../apps/projects/incubator/tools/arm-ripper/
   # - ../../../../apps/projects/incubator/webservers/nginx-testpage/
   - ../../../../apps/projects/incubator/webservers/kubelize-nextra/
+  - ../../../../apps/projects/stable/gameservers/conan-exiles/
   # - ../../../../apps/projects/incubator/knowledgedbs/affine-pro/
   # - ../../../../apps/projects/incubator/fileshare/nextcloud/ 

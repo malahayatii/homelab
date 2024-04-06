@@ -14,6 +14,7 @@ resources:
   # operators incubator
   - ../../../../apps/common/namespaces/operators/incubator/observability/uptime-kuma/ 
   # projects stable
+  - ../../../../apps/common/namespaces/projects/stable/gameservers/conan-exiles/
   # - ../../../../apps/common/namespaces/projects/stable/gameservers/minecraft/
   # - ../../../../apps/common/namespaces/projects/stable/gameservers/palworld/
   # - ../../../../apps/common/namespaces/projects/stable/fileshare/nextcloud/
