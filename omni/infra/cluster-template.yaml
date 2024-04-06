@@ -11,6 +11,9 @@ patches:
     file: patches/cni.yaml
   - name: storage
     file: patches/storage.yaml
+  - name: disks
+    file: patches/disks.yaml
+
 ---
 kind: ControlPlane
 machineClass:
