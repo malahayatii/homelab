@@ -9,6 +9,8 @@ features:
 patches:
   - name: cni
     file: patches/cni.yaml
+  - name: storage
+    file: patches/storage.yaml
 ---
 kind: ControlPlane
 machineClass:
