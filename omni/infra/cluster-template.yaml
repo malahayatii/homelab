@@ -13,7 +13,7 @@ patches:
 kind: ControlPlane
 machineClass:
   name: homelab-control-plane
-  size: 3
+  size: 2
 patches:
   - name: cilium
     file: patches/cilium.yaml
