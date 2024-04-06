@@ -36,7 +36,7 @@ spec:
         storage:
           name: "minecraft-server-data"
           accessMode: "ReadWriteOnce"
-          storageClassName: "mayastor-3"
+          storageClassName: "longhorn"
           capacity: "20Gi"
           annotations: {}
             # kubevirt.io/provisionOnNode: "prod-svc-270224"
