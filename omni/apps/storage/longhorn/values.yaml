@@ -1,2 +1,3 @@
-persistence:
-  defaultClassReplicaCount: 1
+longhorn:
+  persistence:
+    defaultClassReplicaCount: 1
