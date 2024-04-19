@@ -79,7 +79,7 @@ spec:
         storage:
           name: "uptime-kuma"
           accessMode: ""
-          storageClassName: "mayastor-3"
+          storageClassName: "longhorn"
           capacity: "10Gi"
           annotations: {}
 
