@@ -13,3 +13,4 @@ resources:
   # operators incubator
   # - ../../../../apps/operators/incubator/storage/kubevirt-hpp/
   - ../../../../apps/operators/incubator/observability/uptime-kuma/
+  - ../../../../apps/operators/incubator/security/sealed-secrets-controller/
