@@ -7,7 +7,7 @@ spec:
   project: default
   destination:
     server: https://kubernetes.default.svc
-    namespace: security-system
+    namespace: sealed-secrets
   source:
     repoURL: https://bitnami-labs.github.io/sealed-secrets
     targetRevision: 2.15.4
