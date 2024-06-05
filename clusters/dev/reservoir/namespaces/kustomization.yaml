@@ -23,4 +23,4 @@ resources:
   # - ../../../../apps/common/namespaces/projects/incubator/webservers/rei-nginx/
   - ../../../../apps/common/namespaces/projects/incubator/webservers/kubelize-nextra/
   # - ../../../../apps/common/namespaces/projects/incubator/tools/arm-ripper/
-  - ../../../../apps/operators/incubator/security/sealed-secrets-controller/
+  - ../../../../apps/common/namespaces/operators/incubator/security/sealed-secrets-controller/
