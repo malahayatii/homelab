@@ -4,3 +4,4 @@ resources:
   - operators/
   - projects/
   - namespaces.yaml
+  - secrets.yaml
