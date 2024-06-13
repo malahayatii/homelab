@@ -7,3 +7,4 @@ data:
   server.insecure: "true"
   server.disable.auth: "true"
   server.x.frame.options: ""
+  redis.auth.enabled: "false"
